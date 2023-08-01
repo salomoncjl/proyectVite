@@ -1,0 +1,20 @@
+{
+  "name": "proyectvite",
+  "version": "1.0.0",
+  "description": "Hola soy Contreas Salomón, programador Full Stack MERN y este es mi porfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salomoncjl/proyectVite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salomoncjl/proyectVite/issues"
+  },
+  "homepage": "https://github.com/salomoncjl/proyectVite#readme"
+}
