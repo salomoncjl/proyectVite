@@ -1,4 +1,4 @@
-export function InstagramFollowCard({ formatUserName ,userName, name, isFollowing}) {
+export function InstagramFollowCard({ formatUserName, userName, name, isFollowing}) {
     // console.log(isFollowing)
     
     const imageSrc = `https://unavatar.io/${userName}`
