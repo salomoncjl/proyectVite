@@ -1,19 +1,27 @@
-export function App() {
-    return (
-        <article>
-            <header>
-                <img src="https://unavatar.io/goku" alt="Avatar Goku"/>
-                <div>
-                    <strong>Son Goku</strong>
-                    <span>@Goku</span>
-                </div>
-            </header>
+import { InstagramFollowCard } from "./InstagramFollowCard";
 
-            <aside>
-                <button>
-                    Seguir
-                </button>
-            </aside>
-        </article>
+export function App() {
+    const format = (userName) => `@${userName}`
+    return (
+        <section className="app-instagram">
+            <InstagramFollowCard 
+                formatUserName={format}
+                isFollowing={false}
+                userName='midudev'
+                name="Miguel"
+                />
+            <InstagramFollowCard 
+                formatUserName={format}
+                isFollowing 
+                userName='Goku' 
+                name="goku"
+                />
+            <InstagramFollowCard 
+                formatUserName={format}
+                isFollowing 
+                userName='german' 
+                name="German"
+                />
+        </section>
     )
 }
