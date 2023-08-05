@@ -1,5 +1,22 @@
-export function InstagramFollowCard({ formatUserName, userName, name, isFollowing}) {
+import { useState } from "react";
+
+export function InstagramFollowCard({ formatUserName, userName, name}) {
     // console.log(isFollowing)
+    const [isFollowing, setIsFollowing] = useState(false)
+
+    // Las lineas estas con la linea 5 son equivalentes
+    // const state = useState(false)
+    // const isFollowing = state[0]
+    // const setIsFollowwing = state[1]
+
+    const handleClick = () => {
+        setIsFollowing(!isFollowing)
+    }
+
+    const text = isFollowing ? 'Siguiendo' : 'Seguir';
+    const buttonClassName = isFollowing
+        ? ''
+        : 'ig-followCard-Button'
     
     const imageSrc = `https://unavatar.io/${userName}`
     return (
@@ -15,8 +32,8 @@ export function InstagramFollowCard({ formatUserName, userName, name, isFollowin
         </header>
 
         <aside>
-            <button>
-                Seguir
+            <button className={buttonClassName} onClick={handleClick}>
+                {text}
             </button>
         </aside>
     </article>
